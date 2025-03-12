@@ -5,7 +5,7 @@ export const About = () => {
   const skills = [
     {
       category: "Programming",
-      items: ["SQL", "Python (NumPy, Pandas, Matplotlib)", "R", "Scikit-learn", "Plotly"],
+      items: ["SQL", "Python (NumPy, Pandas, Matplotlib, Plotly)", "R", "Scikit-learn"],
       icon: Code,
     },
     {
@@ -20,7 +20,13 @@ export const About = () => {
     },
     {
       category: "Certifications",
-      items: ["Google Advanced Analytics", "Tableau", "Data Analytics", "Project Management"],
+      items: [
+        "Google Advanced Data Analytics",
+        "Data Visualization with Tableau",
+        "Data Analysis with Python",
+        "Google Data Analytics",
+        "Google Project Management"
+      ],
       icon: Award,
     },
   ];

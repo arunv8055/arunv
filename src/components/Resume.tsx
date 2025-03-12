@@ -1,3 +1,4 @@
+
 import { Briefcase, Calendar, Download, FileText, GraduationCap } from "lucide-react";
 
 export const Resume = () => {
@@ -78,6 +79,11 @@ export const Resume = () => {
       date: "2023"
     },
     {
+      name: "Google Data Analytics",
+      issuer: "Google",
+      date: "2023"
+    },
+    {
       name: "Strategy and Game Theory for Management",
       issuer: "IIM",
       date: "2023"
@@ -85,6 +91,11 @@ export const Resume = () => {
     {
       name: "Google Project Management",
       issuer: "Google",
+      date: "2023"
+    },
+    {
+      name: "Pre MBA-Statistics",
+      issuer: "Rice University",
       date: "2023"
     }
   ];
