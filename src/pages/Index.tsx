@@ -11,6 +11,20 @@ const Index = () => {
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
+    
+    // Clean up Three.js instances when unmounting
+    return () => {
+      // Remove any existing Three.js canvas that might be leftover
+      const existingCanvases = document.querySelectorAll('canvas');
+      existingCanvases.forEach(canvas => {
+        if (canvas.parentNode && canvas.parentNode.parentNode) {
+          const container = canvas.parentNode.parentNode;
+          if (container.classList.contains('fixed') || container.classList.contains('absolute')) {
+            container.remove();
+          }
+        }
+      });
+    };
   }, []);
 
   return (

@@ -3,27 +3,11 @@ import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
 import { useEffect, useRef, useState } from "react";
+import ParticleField from "./ParticleField";
 
 export const Hero = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const heroRef = useRef<HTMLElement>(null);
   
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (heroRef.current) {
-        const rect = heroRef.current.getBoundingClientRect();
-        // Calculate mouse position relative to the hero section
-        setMousePosition({
-          x: ((e.clientX - rect.left) / rect.width) * 100,
-          y: ((e.clientY - rect.top) / rect.height) * 100,
-        });
-      }
-    };
-    
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
   const scrollToNextSection = () => {
     const aboutSection = document.getElementById("about");
     if (aboutSection) {
@@ -37,12 +21,11 @@ export const Hero = () => {
     <section 
       ref={heroRef}
       className="h-screen flex items-center justify-center relative overflow-hidden"
-      style={{
-        background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(59, 130, 246, 0.15), transparent 40%), linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(59, 130, 246, 0.2) 100%)`
-      }}
     >
+      <ParticleField />
+      
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-background opacity-95" />
+        <div className="absolute inset-0 bg-background opacity-40" />
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -51,7 +34,7 @@ export const Hero = () => {
           <div className="animate-fade-in" style={{
             animationDelay: "0.3s"
           }}>
-            <span className="text-sm font-medium px-3 py-1 rounded-full bg-primary/10 text-primary mb-4 inline-block backdrop-blur-sm">
+            <span className="text-sm font-medium px-3 py-1 rounded-full bg-primary/20 text-primary mb-4 inline-block backdrop-blur-sm">
               Welcome to my portfolio
             </span>
           </div>
