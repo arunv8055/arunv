@@ -4,23 +4,23 @@ import { Award, Code, Database, LineChart } from "lucide-react";
 export const About = () => {
   const skills = [
     {
-      category: "Data Analysis",
-      items: ["Python", "SQL", "Excel", "Statistical Analysis", "Data Visualization"],
-      icon: Database,
-    },
-    {
-      category: "Business Intelligence",
-      items: ["Power BI", "Tableau", "Data Modeling", "ETL Processes", "Dashboard Development"],
-      icon: LineChart,
-    },
-    {
       category: "Programming",
-      items: ["Python", "SQL", "R", "JavaScript", "PySpark"],
+      items: ["SQL", "Python (NumPy, Pandas, Matplotlib)", "R", "Scikit-learn", "Plotly"],
       icon: Code,
     },
     {
+      category: "Business Intelligence",
+      items: ["Power BI", "Tableau", "Alteryx", "Postgres", "ETL Processes"],
+      icon: LineChart,
+    },
+    {
+      category: "Data Analysis",
+      items: ["Statistical Analysis", "Data Modeling", "EDA", "Financial Modeling", "Dashboard Development"],
+      icon: Database,
+    },
+    {
       category: "Certifications",
-      items: ["Google Advanced Data Analytics", "Strategy & Game Theory", "Tableau Visualization"],
+      items: ["Google Advanced Analytics", "Tableau", "Data Analytics", "Project Management"],
       icon: Award,
     },
   ];
@@ -33,20 +33,31 @@ export const About = () => {
           
           <div className="space-y-4 text-balance">
             <p>
-              I'm a detail-oriented and results-driven data professional with expertise in turning complex data into actionable insights. With a passion for problem-solving and data storytelling, I help organizations make data-driven decisions.
+              I'm a detail-oriented and results-driven professional with a strong foundation in data analysis, 
+              business intelligence, and process optimization. I'm passionate about solving complex business 
+              problems and delivering actionable insights.
             </p>
             <p>
-              My expertise spans data analysis, business intelligence, and process optimization, with a particular focus on agricultural technology and sustainable business practices.
+              My expertise spans across data analytics, business intelligence, and process optimization, 
+              with a focus on leveraging tools like SQL, Python, Power BI, and advanced analytics to drive 
+              data-driven decision-making.
             </p>
             <p>
-              Throughout my career, I've collaborated with cross-functional teams to implement data-driven solutions that directly impact business outcomes and operational efficiency.
+              Throughout my career, I've successfully collaborated with cross-functional teams to implement 
+              data-driven solutions that directly impact business outcomes and operational efficiency.
             </p>
           </div>
           
           <div className="pt-4">
             <h3 className="heading-sm mb-4">My Interests</h3>
             <div className="flex flex-wrap gap-2">
-              {["Data Analytics", "Business Intelligence", "Agricultural Technology", "Sustainable Business", "Process Optimization"].map((interest) => (
+              {[
+                "Data Analytics",
+                "Business Intelligence",
+                "Statistical Analysis",
+                "Process Optimization",
+                "Machine Learning"
+              ].map((interest) => (
                 <span 
                   key={interest} 
                   className="px-3 py-1 rounded-full text-sm bg-secondary text-secondary-foreground"

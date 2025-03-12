@@ -10,17 +10,17 @@ export const SocialLinks = ({ className = "", iconSize = 20 }: SocialLinksProps)
   const socialLinks = [
     {
       name: "LinkedIn",
-      href: "https://linkedin.com/in/arun-v",
+      href: "https://linkedin.com/in/varun7582",
       icon: Linkedin,
     },
     {
       name: "GitHub",
-      href: "https://github.com/arun-v",
+      href: "https://github.com/arunv8055",
       icon: Github,
     },
     {
       name: "Email",
-      href: "mailto:contact@arun-v.com",
+      href: "mailto:arun7582@outlook.com",
       icon: Mail,
     },
   ];

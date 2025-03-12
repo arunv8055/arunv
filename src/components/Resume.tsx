@@ -1,4 +1,3 @@
-
 import { Briefcase, Calendar, Download, FileText, GraduationCap } from "lucide-react";
 
 export const Resume = () => {
@@ -7,83 +6,86 @@ export const Resume = () => {
       title: "Business Data Analyst",
       company: "Agathium",
       period: "Jan 2025 – Present",
-      description: "Lead data analysis initiatives, collaborate with stakeholders to optimize business processes, and implement data-driven solutions using advanced analytics and visualization tools.",
+      description: "Lead requirements gathering, process optimization, and data analysis initiatives, collaborating with stakeholders to implement enterprise solutions and drive operational improvements.",
       achievements: [
-        "Reduced report generation time by 40% through process automation",
-        "Developed interactive dashboards that improved decision-making efficiency",
-        "Led cross-functional data integration projects using Agile methodologies"
+        "Gathered and documented system requirements for enterprise applications",
+        "Analyzed workflows to identify inefficiencies and implement improvements",
+        "Utilized SQL, Excel, and Power BI for system performance analysis",
+        "Managed multiple projects using Agile methodologies"
       ]
     },
     {
       title: "Business Analyst",
-      company: "PayAgri",
+      company: "payAgri",
       period: "Mar 2024 – Dec 2024",
-      description: "Analyzed business operations, automated reporting processes, and developed dashboards to provide actionable insights for strategic decision-making.",
+      description: "Improved operational efficiency through data analysis and process automation, managing complex datasets and developing interactive dashboards.",
       achievements: [
-        "Automated weekly reporting process, saving 15+ hours per week",
-        "Designed and implemented Power BI dashboards for executive leadership",
-        "Optimized data collection procedures, improving data accuracy by 25%"
+        "Improved operational efficiency by 20% through process automation",
+        "Managed large datasets using Python and SQL for data-driven decisions",
+        "Designed interactive Power BI dashboards for performance metrics",
+        "Led cross-functional teams for requirement gathering and solution delivery"
       ]
     },
     {
       title: "Data Analyst Intern",
-      company: "Rubus Digital",
+      company: "Rubus Digitals",
       period: "Jan 2024 – Mar 2024",
-      description: "Optimized SQL queries, developed real-time analytics solutions, and created financial models to improve data accessibility and reporting efficiency.",
+      description: "Conducted data analytics and financial modeling, optimized database performance, and implemented real-time analytics solutions.",
       achievements: [
-        "Improved query performance by 35% through SQL optimization",
-        "Developed financial models that identified $50K in cost-saving opportunities",
-        "Created automated reports that reduced manual analysis time by 60%"
+        "Improved data retrieval efficiency by 25% through SQL optimization",
+        "Implemented MQTT for real-time data streaming",
+        "Developed Power BI dashboards for key metrics tracking",
+        "Conducted EDA and financial modeling for strategic decisions"
       ]
     },
     {
       title: "Business Analyst Intern",
       company: "Startup Tamil Nadu",
       period: "Dec 2022 – May 2023",
-      description: "Contributed to Startup India Ranking initiatives, managed compliance documentation, and improved internal processes through data analysis and workflow optimization.",
+      description: "Contributed to Startup India Ranking project through analytics development and process improvement initiatives.",
       achievements: [
-        "Played key role in achieving top 5 position in Startup India Ranking",
-        "Streamlined compliance documentation process, reducing errors by 30%",
-        "Implemented data validation procedures that improved data quality"
+        "Built analytics tools using SQL and Power BI for national ranking project",
+        "Implemented control framework for operational efficiency",
+        "Reduced operational delays by 20% through process optimization",
+        "Conducted UAT and secured stakeholder sign-offs"
       ]
     }
   ];
 
   const education = [
     {
-      degree: "Master of Business Administration",
-      institution: "Anna University",
-      period: "2021 - 2023",
-      description: "Specialized in Business Analytics with focus on data-driven decision making and strategic planning."
-    },
-    {
-      degree: "Bachelor of Technology in Information Technology",
-      institution: "Vellore Institute of Technology",
-      period: "2017 - 2021",
-      description: "Focused on database management, programming, and analytics foundations."
+      degree: "Bachelor of Science (B.Sc. Hons)",
+      institution: "TNAU",
+      period: "2018 - 2022",
+      description: "CGPA: 7.79/10"
     }
   ];
 
   const certifications = [
     {
-      name: "Google Advanced Data Analytics Professional Certificate",
+      name: "Google Advanced Data Analytics",
       issuer: "Google",
+      date: "2024"
+    },
+    {
+      name: "Data Visualization with Tableau",
+      issuer: "UC Davis",
+      date: "2024"
+    },
+    {
+      name: "Data Analysis with Python",
+      issuer: "IBM",
       date: "2023"
     },
     {
-      name: "Strategy and Game Theory for Managers",
-      issuer: "Indian Institute of Management",
-      date: "2022"
+      name: "Strategy and Game Theory for Management",
+      issuer: "IIM",
+      date: "2023"
     },
     {
-      name: "Tableau Desktop Specialist",
-      issuer: "Tableau",
-      date: "2022"
-    },
-    {
-      name: "Python for Data Science and Machine Learning",
-      issuer: "Udemy",
-      date: "2021"
+      name: "Google Project Management",
+      issuer: "Google",
+      date: "2023"
     }
   ];
 

@@ -1,4 +1,3 @@
-
 import { useToast } from "@/components/ui/use-toast";
 import { Check, Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
@@ -47,32 +46,32 @@ export const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "contact@arun-v.com",
-      href: "mailto:contact@arun-v.com",
+      value: "arun7582@outlook.com",
+      href: "mailto:arun7582@outlook.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 123 456 7890",
-      href: "tel:+911234567890",
+      value: "+91 76399 71082",
+      href: "tel:+917639971082",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Chennai, India",
-      href: "https://maps.google.com/?q=Chennai,India",
+      value: "Vellore, India",
+      href: "https://maps.google.com/?q=Vellore,India",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/arun-v",
-      href: "https://linkedin.com/in/arun-v",
+      value: "linkedin.com/in/varun7582",
+      href: "https://linkedin.com/in/varun7582",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/arun-v",
-      href: "https://github.com/arun-v",
+      value: "github.com/arunv8055",
+      href: "https://github.com/arunv8055",
     },
   ];
 
