@@ -62,41 +62,156 @@ export const Resume = () => {
     }
   ];
 
-  const certifications = [
+  const certificationCategories = [
     {
-      name: "Google Advanced Data Analytics",
-      issuer: "Google",
-      date: "2024"
+      category: "Data Analytics & Tools",
+      certifications: [
+        {
+          name: "Google Advanced Data Analytics",
+          issuer: "Google",
+          date: "Dec 2024"
+        },
+        {
+          name: "Data Visualization with Tableau",
+          issuer: "University of California, Davis",
+          date: "Aug 2023"
+        },
+        {
+          name: "Data Analysis with Python",
+          issuer: "IBM",
+          date: "Jul 2023"
+        },
+        {
+          name: "Google Data Analytics Professional Certificate",
+          issuer: "Google",
+          date: "Apr 2023"
+        },
+        {
+          name: "Data Analytics Essentials",
+          issuer: "Cisco",
+          date: "Mar 2023"
+        },
+        {
+          name: "Big Data Foundation - Level 1",
+          issuer: "Cognitive Class",
+          date: "Aug 2021"
+        }
+      ]
     },
     {
-      name: "Data Visualization with Tableau",
-      issuer: "UC Davis",
-      date: "2024"
+      category: "Machine Learning & AI",
+      certifications: [
+        {
+          name: "Machine Learning - Deeplearning.ai",
+          issuer: "Stanford University",
+          date: "Dec 2024"
+        },
+        {
+          name: "AI for Everyone",
+          issuer: "DeepLearning.AI",
+          date: "Nov 2022"
+        },
+        {
+          name: "Data Science Methodology",
+          issuer: "IBM",
+          date: "Nov 2022"
+        },
+        {
+          name: "Tools for Data Science",
+          issuer: "IBM",
+          date: "Nov 2022"
+        }
+      ]
     },
     {
-      name: "Data Analysis with Python",
-      issuer: "IBM",
-      date: "2023"
+      category: "Business Analysis & Strategy",
+      certifications: [
+        {
+          name: "Strategy and Game Theory for Management",
+          issuer: "IIM Ahmedabad",
+          date: "Oct 2024"
+        },
+        {
+          name: "Business Analysis & Process Management",
+          issuer: "Coursera",
+          date: "Apr 2023"
+        },
+        {
+          name: "Pre MBA Statistics",
+          issuer: "IIM Ahmedabad",
+          date: "Dec 2024"
+        }
+      ]
     },
     {
-      name: "Google Data Analytics",
-      issuer: "Google",
-      date: "2023"
+      category: "Technical & Programming",
+      certifications: [
+        {
+          name: "Python (Basic)",
+          issuer: "HackerRank",
+          date: "May 2023"
+        },
+        {
+          name: "SQL (Intermediate)",
+          issuer: "HackerRank",
+          date: "May 2023"
+        },
+        {
+          name: "Intro to Programming",
+          issuer: "Kaggle",
+          date: "Sep 2022"
+        }
+      ]
     },
     {
-      name: "Strategy and Game Theory for Management",
-      issuer: "IIM",
-      date: "2023"
+      category: "Virtual Internships",
+      certifications: [
+        {
+          name: "Data Analytics Consulting Virtual Internship",
+          issuer: "KPMG",
+          date: "May 2023"
+        },
+        {
+          name: "Investment Banking Virtual Experience Program",
+          issuer: "JPMorganChase",
+          date: "Jun 2023"
+        },
+        {
+          name: "Data Analytics and Visualization Virtual Experience",
+          issuer: "Accenture",
+          date: "May 2023"
+        }
+      ]
     },
     {
-      name: "Google Project Management",
-      issuer: "Google",
-      date: "2023"
+      category: "Google Analytics & Digital Marketing",
+      certifications: [
+        {
+          name: "Google Analytics for Power Users",
+          issuer: "Google",
+          date: "May 2021 · Expired May 2024"
+        },
+        {
+          name: "Fundamentals of Digital Marketing",
+          issuer: "Google Digital Unlocked",
+          date: "Apr 2021"
+        }
+      ]
     },
     {
-      name: "Pre MBA-Statistics",
-      issuer: "Rice University",
-      date: "2023"
+      category: "Miscellaneous",
+      certifications: [
+        {
+          name: "Project Management",
+          issuer: "Google",
+          date: "Dec 2024"
+        },
+        {
+          name: "HTML5 - From Basics to Advanced",
+          issuer: "Udemy",
+          date: "Dec 2020"
+        }
+      ]
     }
   ];
 
@@ -193,27 +308,32 @@ export const Resume = () => {
           </div>
         </div>
         
-        <div>
+        <div className="space-y-8">
           <div className="flex items-center gap-3 mb-8">
             <FileText className="text-primary w-6 h-6" />
             <h3 className="heading-md">Certifications</h3>
           </div>
           
-          <div className="space-y-5">
-            {certifications.map((cert, index) => (
-              <div 
-                key={index} 
-                className="glass-card p-5"
-                style={{ animationDelay: `${index * 0.15}s` }}
-              >
-                <h4 className="font-medium mb-2">{cert.name}</h4>
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">{cert.issuer}</span>
-                  <span className="text-primary">{cert.date}</span>
-                </div>
+          {certificationCategories.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="mb-8">
+              <h4 className="text-lg font-semibold mb-4">{category.category}</h4>
+              <div className="space-y-4">
+                {category.certifications.map((cert, certIndex) => (
+                  <div 
+                    key={certIndex} 
+                    className="glass-card p-5 transition-all hover:scale-[1.02]"
+                    style={{ animationDelay: `${certIndex * 0.1}s` }}
+                  >
+                    <h5 className="font-medium mb-2">{cert.name}</h5>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-muted-foreground">{cert.issuer}</span>
+                      <span className="text-primary">{cert.date}</span>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

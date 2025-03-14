@@ -17,8 +17,8 @@ const Index = () => {
       // Remove any existing Three.js canvas that might be leftover
       const existingCanvases = document.querySelectorAll('canvas');
       existingCanvases.forEach(canvas => {
-        if (canvas.parentNode && canvas.parentNode.parentNode) {
-          const container = canvas.parentNode.parentNode;
+        if (canvas.parentElement && canvas.parentElement.parentElement) {
+          const container = canvas.parentElement.parentElement;
           if (container.classList.contains('fixed') || container.classList.contains('absolute')) {
             container.remove();
           }
